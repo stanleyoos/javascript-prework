@@ -22,3 +22,21 @@ if (randomNumber == 1) {
 } else if (randomNumber == 3) {
   computerMove = 'nożyce'
 }
+
+if (computerMove == 'nożyce' && playerMove == 'kamień') {
+  console.log(`Wygrał gracz: ${computerMove} < ${playerMove}`)
+} else if (computerMove == 'nożyce' && playerMove == 'papier') {
+  console.log(`Wygrał gracz: ${computerMove} > ${playerMove}`)
+} else if (computerMove == 'papier' && playerMove == 'kamień') {
+  console.log(`Wygrał gracz: ${computerMove} > ${playerMove}`)
+} else if (computerMove == 'papier' && playerMove == 'nożyce') {
+  console.log(`Wygrał gracz: ${computerMove} < ${playerMove}`)
+} else if (computerMove == 'kamień' && playerMove == 'nożyce') {
+  console.log(`Wygrał gracz: ${computerMove} > ${playerMove}`)
+} else if (computerMove == 'kamień' && playerMove == 'papier') {
+  console.log(`Wygrał gracz: ${computerMove} < ${playerMove}`)
+} else if (computerMove == playerMove && playerMove !== 'nieznany ruch') {
+  console.log('Remis: obaj gracze wybrali: ' + computerMove)
+} else {
+  console.log('błędny input!')
+}
