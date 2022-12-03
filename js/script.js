@@ -40,3 +40,5 @@ if (computerMove == 'nożyce' && playerMove == 'kamień') {
 } else {
   printMessage('błędny input!')
 }
+
+// test - added ssh key once again
