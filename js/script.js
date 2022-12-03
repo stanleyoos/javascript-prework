@@ -11,7 +11,7 @@ if (playerInput == 1) {
 
 let randomNumber = Math.floor(Math.random() * 3 + 1)
 
-console.log('Wylosowana liczba to: ' + randomNumber)
+//console.log('Wylosowana liczba to: ' + randomNumber)
 
 let computerMove = 'nieznany ruch'
 
@@ -24,19 +24,19 @@ if (randomNumber == 1) {
 }
 
 if (computerMove == 'nożyce' && playerMove == 'kamień') {
-  console.log(`Wygrał gracz: ${computerMove} < ${playerMove}`)
+  printMessage(`Wygrał gracz: ${computerMove} < ${playerMove}`)
 } else if (computerMove == 'nożyce' && playerMove == 'papier') {
-  console.log(`Wygrał gracz: ${computerMove} > ${playerMove}`)
+  printMessage(`Wygrał gracz: ${computerMove} > ${playerMove}`)
 } else if (computerMove == 'papier' && playerMove == 'kamień') {
-  console.log(`Wygrał gracz: ${computerMove} > ${playerMove}`)
+  printMessage(`Wygrał gracz: ${computerMove} > ${playerMove}`)
 } else if (computerMove == 'papier' && playerMove == 'nożyce') {
-  console.log(`Wygrał gracz: ${computerMove} < ${playerMove}`)
+  printMessage(`Wygrał gracz: ${computerMove} < ${playerMove}`)
 } else if (computerMove == 'kamień' && playerMove == 'nożyce') {
-  console.log(`Wygrał gracz: ${computerMove} > ${playerMove}`)
+  printMessage(`Wygrał gracz: ${computerMove} > ${playerMove}`)
 } else if (computerMove == 'kamień' && playerMove == 'papier') {
-  console.log(`Wygrał gracz: ${computerMove} < ${playerMove}`)
+  printMessage(`Wygrał gracz: ${computerMove} < ${playerMove}`)
 } else if (computerMove == playerMove && playerMove !== 'nieznany ruch') {
-  console.log('Remis: obaj gracze wybrali: ' + computerMove)
+  printMessage('Remis: obaj gracze wybrali: ' + computerMove)
 } else {
-  console.log('błędny input!')
+  printMessage('błędny input!')
 }
