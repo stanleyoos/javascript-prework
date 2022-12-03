@@ -42,4 +42,4 @@ if (computerMove == 'nożyce' && playerMove == 'kamień') {
 }
 
 // test - added ssh key once again
-// test 2
+// test 3
