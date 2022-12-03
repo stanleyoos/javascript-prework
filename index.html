@@ -4,15 +4,49 @@
     <meta charset="UTF-8" />
     <title>Kamień, papier, nożyce</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
+      <div class="header">
+        <h1><i class="fa-solid fa-gamepad"></i></h1>
+        <p>
+          How good you are at rock, paper, scissors?
+          <i class="fa-regular fa-face-grin-beam"></i>
+        </p>
+      </div>
+      <div class="result">
+        <div>
+          <i class="fa-solid fa-person"></i>
+          <div id="player-result">0</div>
+        </div>
+        <div>
+          <i class="fa-solid fa-computer"></i>
+          <div id="computer-result">0</div>
+        </div>
+      </div>
       <div id="buttons">
-        <button id="rock">Kamień</button>
-        <button id="paper">Papier</button>
-        <button id="scissors">Nożyce</button>
+        <button id="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+        <button id="paper"><i class="fa-regular fa-note-sticky"></i></button>
+        <button id="scissors"><i class="fa-solid fa-scissors"></i></button>
       </div>
       <div id="messages"></div>
+      <div class="probability">
+        <form action="submit">
+          <input type="range" id="probability" />
+        </form>
+        <button type="submit">Change probability</button>
+      </div>
+
+      <div class="loop">
+        <form action="submit">
+          <input type="number" id="number" />
+        </form>
+        <button type="submit" id="">Check the result</button>
+      </div>
     </div>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>

@@ -25,16 +25,22 @@ function playGame(playerInput) {
   function displayResult(argComputerMove, argPlayerMove) {
     if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
       printMessage(`Wygrał gracz: ${argComputerMove} < ${argPlayerMove}`)
+      playerScore++
     } else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
-      printMessage(`Wygrał gracz: ${argComputerMove} > ${argPlayerMove}`)
+      printMessage(`Wygrał komputer: ${argComputerMove} > ${argPlayerMove}`)
+      computerScore++
     } else if (argComputerMove == 'papier' && argPlayerMove == 'kamień') {
-      printMessage(`Wygrał gracz: ${argComputerMove} > ${argPlayerMove}`)
+      printMessage(`Wygrał komputer: ${argComputerMove} > ${argPlayerMove}`)
+      computerScore++
     } else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
       printMessage(`Wygrał gracz: ${argComputerMove} < ${argPlayerMove}`)
+      playerScore++
     } else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
-      printMessage(`Wygrał gracz: ${argComputerMove} > ${argPlayerMove}`)
+      printMessage(`Wygrał komputer: ${argComputerMove} > ${argPlayerMove}`)
+      computerScore++
     } else if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
       printMessage(`Wygrał gracz: ${argComputerMove} < ${argPlayerMove}`)
+      playerScore++
     } else if (
       argComputerMove == argPlayerMove &&
       argPlayerMove !== 'nieznany ruch'
@@ -44,9 +50,14 @@ function playGame(playerInput) {
   }
 
   displayResult(computerMove, playerMove)
+  updateResult()
 }
 
-//playGame(3)
+// buttons
 document.getElementById('rock').addEventListener('click', () => playGame(1))
 document.getElementById('paper').addEventListener('click', () => playGame(2))
 document.getElementById('scissors').addEventListener('click', () => playGame(3))
+
+// result
+let playerScore = 0
+let computerScore = 0

@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: bisque;
+}
+
+body {
+  background: rgb(0, 86, 198);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 86, 198, 1) 0%,
+    rgba(94, 228, 255, 1) 100%
+  );
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.header {
+  margin: 50px;
+  text-align: center;
+  font-size: 50px;
+}
+p {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.result {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#player-result,
+#computer-result {
+  margin-top: 30px;
+  font-size: 60px;
+}
+
+#buttons {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#messages {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+button {
+  width: 220px;
+  height: 100px;
+  background: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button i {
+  color: black;
+  transition: all 0.5s;
+}
+
+button :hover {
+  color: gold;
+}
+.probability,
+.loop {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+}
+
+.probability button,
+.loop button {
+  width: 210px;
+  height: 30px;
+  font-size: 20px;
+  color: rgb(142, 142, 142);
+}
