@@ -13,3 +13,7 @@ const updateResult = function () {
   document.getElementById('computer-result').innerHTML = computerScore
   document.getElementById('player-result').innerHTML = playerScore
 }
+
+// result
+let playerScore = 0
+let computerScore = 0

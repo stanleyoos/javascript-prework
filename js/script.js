@@ -1,8 +1,4 @@
 const playGame = function (playerInput) {
-  // result
-  let playerScore,
-    computerScore = 0
-
   clearMessages()
   const getMoveName = function (argMoveId) {
     if (argMoveId == 1) {
@@ -29,7 +25,6 @@ const playGame = function (playerInput) {
   const displayResult = function (argComputerMove, argPlayerMove) {
     if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
       printMessage(`Wygrał gracz: ${argComputerMove} < ${argPlayerMove}`)
-      playerScore++
       console.log(playerScore)
     } else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
       printMessage(`Wygrał komputer: ${argComputerMove} > ${argPlayerMove}`)
